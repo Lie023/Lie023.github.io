@@ -1,0 +1,124 @@
+
+header{
+    background-color: red;
+}
+body{
+    background-color: whitesmoke;
+}
+.nav-link{
+    color: white;
+}
+#btn{
+    width: 200px;
+}
+#sideNav{
+    margin-top: 70px;
+    position: fixed;
+    width: 140px;
+    height: 100%;
+    background-color: whitesmoke;
+    z-index: 1000;
+
+    transition: all 0.5s;
+}
+#sideNav ul li a:hover{
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+#sideNav ul li a{
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}     
+#main{
+    margin-left: 140px;
+    margin-top: 100px;
+}
+#dropdown{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+#upload{
+    color: black;
+}
+#importAlert{
+    z-index: 1000;
+    width: 55%;
+    position: absolute;
+    top: 100px;
+    left: 330px;
+}
+#small-nav-toggler{
+    cursor: pointer;
+}
+#btnReport,#btnReport1,#btnReport2,#btnReport3,#btnReport4,#btnReport5{
+    margin-left: 87%;
+}
+#print{
+    cursor: pointer;
+}
+
+@media print {
+    #report{
+        -webkit-print-color-adjust: exact;
+    }
+    
+}
+
+@media screen and (max-width:1064px){
+  #sideNav{
+    width: 0px;
+  }
+  #main{
+    margin-left: 20px;
+}
+.navbar-nav{
+    display: none;
+}
+.btn-close{
+    display: none;
+}
+
+}
+
+
+
+
+#alumni{
+    animation-name: show;
+    animation-duration: 1s;  
+    animation-fill-mode:backwards;
+}
+
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+#intro{
+    animation-name: intro;
+    animation-duration: 3s;  
+    animation-fill-mode:backwards;
+  }
+  
+  @keyframes intro {
+    from {
+        opacity: 0;
+        margin-left: 0px;
+    }
+    to
+    {
+        opacity: 1;
+        margin-left: 60px;
+    }
+
+  }
